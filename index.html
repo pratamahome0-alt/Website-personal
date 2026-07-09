@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Studio | Jasa Website, Aplikasi & Editing Video</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8fafc;
+    color:#1f2937;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    z-index:999;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#2563eb;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    background:linear-gradient(135deg,#0f172a,#1d4ed8,#3b82f6);
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#fff;
+    color:#2563eb;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 20px;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h2{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#2563eb;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about-box{
+    background:#2563eb;
+    color:white;
+    border-radius:20px;
+    padding:40px;
+}
+
+.portfolio{display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+        background-color: #eff6ff
+}
+    
+
+.project{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.project span{
+    font-size:50px;
+}
+
+.testimonial{
+    background:#eff6ff;
+}
+
+.testi-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.testi{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    display:inline-block;
+    margin-top:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 30px;
+    border-radius:40px;
+    text-decoration:none;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Digital Studio</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="#service">Layanan</a></li>
+<li><a href="#portfolio">Portofolio</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Solusi Digital untuk Bisnis Anda</h1>
+
+<p>
+Melayani pembuatan Website, Aplikasi, dan Editing Video
+dengan desain modern, cepat, dan profesional.
+</p>
+
+<a href="#contact" class="btn">Konsultasi Gratis</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="title">
+<h2>Tentang Kami</h2>
+<p>Mitra digital yang membantu bisnis berkembang.</p>
+</div>
+
+<div class="about">
+
+<div>
+
+<h3>Mengapa Memilih Kami?</h3>
+
+<br>
+
+<p>
+Kami menyediakan layanan digital yang fokus pada kualitas,
+kecepatan pengerjaan, dan kepuasan pelanggan.
+Mulai dari website perusahaan, aplikasi bisnis,
+hingga editing video promosi.
+</p>
+
+<br>
+
+<ul>
+<li>✔ Desain Modern</li>
+<li>✔ Responsive</li>
+<li>✔ Harga Kompetitif</li>
+<li>✔ Support Setelah Project</li>
+</ul>
+
+</div>
+
+<div class="about-box">
+
+<h2>100+</h2>
+<p>Project Selesai</p>
+
+<br>
+
+<h2>50+</h2>
+<p>Klien Puas</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="service">
+
+<div class="title">
+<h2>Layanan Kami</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>🎬 Editing Video</h3>
+<p>Edit video promosi, YouTube, TikTok, Instagram Reels, Company Profile, dan konten media sosial.</p>
+</div>
+
+<div class="card">
+<h3>💻 Pembuatan Website</h3>
+<p>Website Company Profile, Landing Page, Portfolio, Toko Online, hingga Website Sekolah.</p>
+</div>
+
+<div class="card">
+<h3>📱 Pembuatan Aplikasi</h3>
+<p>Aplikasi Android, Sistem Informasi, Dashboard Admin, dan aplikasi sesuai kebutuhan bisnis.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<div class="title">
+<h2>Portofolio</h2>
+</div>
+
+<div class="portfolio">
+
+<div class="project">
+<span>🌐</span>
+<h3>Website Company</h3>
+<p>Website profil perusahaan modern.</p>
+</div>
+
+<div class="project">
+<span>🛒</span>
+<h3>Toko Online</h3>
+<p>Website penjualan produk.</p>
+</div>
+
+<div class="project">
+<span>📱</span>
+<h3>Aplikasi Android</h3>
+<p>Aplikasi untuk UMKM dan bisnis.</p>
+</div>
+
+<div class="project">
+<span>🎥</span>
+<h3>Video Promosi</h3>
+<p>Konten iklan dan media sosial.</p>
+</div>
+
+</div>
+
+</div>
+
+
+</section>
+
+<section id="contact" class="contact">
+
+<div class="title">
+<h2>Hubungi Kami</h2>
+<p>Siap membantu proyek digital Anda.</p>
+</div>
+
+<p>📱 WhatsApp : 0895-3597-34795</p>
+<p>📧 Email : digitalstudio@email.com</p>
+<p>📍 Indonesia</p>
+
+<a href="https://wa.me/62895359734795?text=Halo,%20saya%20ingin%20konsultasi%20mengenai%20website,%20aplikasi,%20atau%20editing%20video."
+target="_blank">
+Hubungi via WhatsApp
+</a>
+
+</section>
+
+<footer>
+
+© 2026 Digital Studio | Website • Aplikasi • Editing Video
+
+</footer>
+
+</body>
+</html>
